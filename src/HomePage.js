@@ -7,25 +7,27 @@ function HomePage() {
     <div className="container">
       <div className="row justify-content-center">
         <div className="pt-5 col-md-12">
-          <h1 className="text-center mb-4">Welcome to JavaScript Concepts</h1>
-
+          <h1 className=" text-center mb-4">Welcome to JavaScript Concepts</h1>
+          <div className="row justify-content-center"><iframe src="https://lottie.host/embed/bc0b64e3-9155-4b6a-8148-de31b34b567e/S9vRu31Gqg.json"></iframe></div>
           <p>This is a simple web application designed to help you learn JavaScript concepts. Whether you're a beginner or an experienced developer looking to refresh your knowledge, this app provides interactive tutorials and exercises on various topics such as variables, loops, functions, objects, and arrays.</p>
           <p>Feel free to explore the different sections of the app using the navigation menu above. Each section contains informative content and hands-on examples to deepen your understanding of JavaScript.</p>
           <p>Happy learning!</p>
          
         </div>
       </div>
-      <div className="row justify-content-center"><iframe src="https://lottie.host/embed/bc0b64e3-9155-4b6a-8148-de31b34b567e/S9vRu31Gqg.json"></iframe></div>
+      
 
       <div className="pt-3 mb-5 row justify-content-center">
         <div className="col-md-12">
           <div className="row justify-content-center">
 
-
+          
             <div id="home-card" className="col-md-3 mb-4" >
               <Link to="/variables" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="variable.png"></img>
                   <h5 className="card-title">Variables</h5>
+                  
                   <p className="card-text">Learn about variables in JavaScript.</p>
                 </div>
               </Link>
@@ -33,6 +35,7 @@ function HomePage() {
             <div id="home-card" className="col-md-3 mb-4">
               <Link to="/loops" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="feedback-loop.png"></img>
                   <h5 className="card-title">Loops</h5>
                   <p className="card-text">Explore different types of loops in JavaScript.</p>
                 </div>
@@ -42,6 +45,7 @@ function HomePage() {
             <div  id="home-card" className="col-md-3 mb-4">
               <Link to="/functions" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="testing.png"></img>
                   <h5 className="card-title">Functions</h5>
                   <p className="card-text">Understand functions and their usage in JavaScript.</p>
                 </div>
@@ -51,6 +55,7 @@ function HomePage() {
             <div id="home-card" className="col-md-3 mb-4">
               <Link to="/objects" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="computer.png"></img>
                   <h5 className="card-title">Objects</h5>
                   <p className="card-text">Object-oriented programming in JavaScript.</p>
                 </div>
@@ -59,6 +64,7 @@ function HomePage() {
             <div id="home-card" className="col-md-3 mb-4">
               <Link to="/arrays" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="binary.png"></img>
                   <h5 className="card-title">Arrays</h5>
                   <p className="card-text">Discover the power of arrays in JavaScript.</p>
                 </div>
@@ -67,6 +73,7 @@ function HomePage() {
             <div id="home-card" className="col-md-3 mb-4">
               <Link to="/maps" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="sitemap.png"></img>
                   <h5 className="card-title">Maps</h5>
                   <p className="card-text">Learn about maps and their usage in JavaScript for key-value pair data structures.</p>
                 </div>
@@ -75,6 +82,7 @@ function HomePage() {
             <div id="home-card" className="col-md-3 mb-4">
               <Link to="/events" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="power.png"></img>
                   <h5 className="card-title">Events</h5>
                   <p className="card-text">Explore event handling in JavaScript and how to use events effectively.</p>
                 </div>
@@ -83,6 +91,7 @@ function HomePage() {
             <div id="home-card" className="col-md-3 mb-4">
               <Link to="/jQueryClass" className="card shadow hover-card">
                 <div className="card-body">
+                <img class="var-image" alt="" src="js-file.png"></img>
                   <h5 className="card-title">jQuery</h5>
                   <p className="card-text">Learn about jQuery and its features for DOM manipulation and event handling.</p>
                 </div>
