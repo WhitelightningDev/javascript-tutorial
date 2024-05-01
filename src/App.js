@@ -79,7 +79,7 @@ function App() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-              <a href="homePage"><img alt="" src="wired-outline-680-it-developer.webp"></img></a>
+         
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/" activeClassName="active" exact>Home</NavLink>
                 </li>

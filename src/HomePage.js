@@ -7,7 +7,7 @@ function HomePage() {
     <div className="container">
       <div className="row justify-content-center">
         <div className="pt-5 col-md-12">
-          <h1 className=" text-center mb-4">Welcome to JavaScript Concepts</h1>
+          <h1 className="text-center mb-4">Welcome to JavaScript Concepts</h1>
           <div className="row justify-content-center"><iframe src="https://lottie.host/embed/bc0b64e3-9155-4b6a-8148-de31b34b567e/S9vRu31Gqg.json"></iframe></div>
           <p>This is a simple web application designed to help you learn JavaScript concepts. Whether you're a beginner or an experienced developer looking to refresh your knowledge, this app provides interactive tutorials and exercises on various topics such as variables, loops, functions, objects, and arrays.</p>
           <p>Feel free to explore the different sections of the app using the navigation menu above. Each section contains informative content and hands-on examples to deepen your understanding of JavaScript.</p>

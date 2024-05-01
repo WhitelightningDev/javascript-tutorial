@@ -52,7 +52,7 @@ function LoopsPage() {
       <p>
         Here's an example of using a for loop to iterate over an array and print each element to the console:
       </p>
-      <div class="pt-3 pb-5 row justify-content-center"><iframe src="https://lottie.host/embed/3b09c185-50d0-433d-aa0f-d60cdaab4bf5/2SHucwVuF9.json"></iframe></div>
+      <div class="pt-3 pb-5 row justify-content-center"><iframe title="lotti" src="https://lottie.host/embed/3b09c185-50d0-433d-aa0f-d60cdaab4bf5/2SHucwVuF9.json"></iframe></div>
       
       <pre className="card shadow">
         {`
