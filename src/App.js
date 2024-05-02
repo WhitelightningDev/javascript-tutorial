@@ -12,10 +12,6 @@ import MapsClass from './MapsClass';
 import Events from './Events';
 import JQueryClass from './JQueryClass';
 
-
-
-
-
 function Footer() {
   return (
     <footer className="footer mt-auto py-3 bg-light-grey">
@@ -23,8 +19,10 @@ function Footer() {
         <div className="row">
           <div className="col-md-4">
             {/* Left Container */}
-            <p>Left Container</p>
-            
+            <p class="row justify-content-start">Javascript Tutorial</p>
+            <div class="justify-content-start">
+              <a href="/"><img id="footer-img" alt="" src="js-yellow.png"></img></a>
+            </div>
           </div>
           <div className="col-md-4">
             {/* Middle Container */}
@@ -32,7 +30,8 @@ function Footer() {
           </div>
           <div className="col-md-4">
             {/* Right Container */}
-            <ul className="list-unstyled">
+            <ul className="list-styled">
+              {/* Navigation Links */}
               <li className="nav-item">
                 <NavLink className="nav-link" to="/" activeClassName="active" exact>Home</NavLink>
               </li>
@@ -72,6 +71,7 @@ function App() {
   return (
     <Router>
       <div className="d-flex flex-column min-vh-100">
+        {/* Navigation Bar */}
         <nav className="navbar navbar-expand-lg navbar-light bg-light-grey">
           <div className="container-fluid">
             <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@ function App() {
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
               <ul className="navbar-nav me-auto mb-2 mb-lg-0">
-         
+                {/* Navigation Links */}
                 <li className="nav-item">
                   <NavLink className="nav-link" to="/" activeClassName="active" exact>Home</NavLink>
                 </li>
@@ -113,6 +113,7 @@ function App() {
         </nav>
 
         <div className="container flex-grow-1">
+          {/* Routing for different pages */}
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/variables" element={<VariablesPage />} />
@@ -126,6 +127,7 @@ function App() {
           </Routes>
         </div>
 
+        {/* Footer */}
         <Footer />
       </div>
     </Router>

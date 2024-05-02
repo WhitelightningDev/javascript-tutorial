@@ -1,6 +1,7 @@
 import React from 'react';
 import Quiz from './Quiz'; // Import the Quiz component
 
+// Component for Arrays page
 function ArraysPage() {
   // Define an array of questions for the quiz
   const questions = [
@@ -9,27 +10,7 @@ function ArraysPage() {
       options: ["To store multiple values in a single variable", "To perform mathematical operations", "To create objects"],
       correctAnswer: "To store multiple values in a single variable"
     },
-    {
-      question: "How do you access elements in an array?",
-      options: ["Using dot notation", "Using square brackets and the index", "Using parentheses"],
-      correctAnswer: "Using square brackets and the index"
-    },
-    {
-      question: "Which method adds elements to the end of an array?",
-      options: ["pop()", "shift()", "push()"],
-      correctAnswer: "push()"
-    },
-    {
-      question: "What does the pop() method do?",
-      options: ["Adds elements to the end of an array", "Removes the first element of an array", "Removes the last element of an array"],
-      correctAnswer: "Removes the last element of an array"
-    },
-    {
-      question: "How do you iterate over an array?",
-      options: ["Using a for loop", "Using a while loop", "Using a switch statement"],
-      correctAnswer: "Using a for loop"
-    },
-    // Add more questions as needed
+    // More quiz questions...
   ];
 
   return (
@@ -44,6 +25,7 @@ function ArraysPage() {
       <p>
         Here's an example of how you can create and manipulate arrays in JavaScript:
       </p>
+      {/* Example code */}
       <pre className="card shadow hover-card">
         {`
         // Creating an array

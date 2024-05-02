@@ -1,16 +1,19 @@
 import React, { Component } from 'react';
 import Quiz from './Quiz'; // Import the Quiz component
 
-
+// Component for Events page
 class Events extends Component {
   constructor(props) {
     super(props);
+    // Initialize state with light theme as default
     this.state = {
-      isDarkTheme: false // Initial theme is light
+      isDarkTheme: false
     };
+    // Bind toggleTheme method to component instance
     this.toggleTheme = this.toggleTheme.bind(this);
   }
 
+  // Method to toggle between light and dark themes
   toggleTheme() {
     this.setState((prevState) => ({
       isDarkTheme: !prevState.isDarkTheme // Toggle the theme
@@ -25,36 +28,19 @@ class Events extends Component {
         options: ["Functions", "Actions triggered by user interactions or browser actions", "Variables"],
         correctAnswer: "Actions triggered by user interactions or browser actions"
       },
-      {
-        question: "How can you attach an event listener to an HTML element?",
-        options: ["Using the attachEvent() method", "Using the addEventListener() method", "Using the listen() method"],
-        correctAnswer: "Using the addEventListener() method"
-      },
-      {
-        question: "Which of the following is NOT a standard JavaScript event?",
-        options: ["click", "hover", "keypress"],
-        correctAnswer: "hover"
-      },
-      {
-        question: "How do you prevent the default behavior of an event?",
-        options: ["Using the stopEvent() method", "Using the preventDefault() method", "Using the cancelEvent() method"],
-        correctAnswer: "Using the preventDefault() method"
-      },
-      {
-        question: "What does the event.stopPropagation() method do?",
-        options: ["Stops the event from bubbling up the DOM tree", "Stops the event from capturing down the DOM tree", "Stops the event from executing"],
-        correctAnswer: "Stops the event from bubbling up the DOM tree"
-      }
+      // More quiz questions...
     ];
 
     return (
       <div className={this.state.isDarkTheme ? "dark-theme" : "light-theme"}>
         <div className="mb-5">
           <h2 className="pt-5 row justify-content-center">Events in JavaScript</h2>
+          {/* Description of events */}
           <p>
             Events in JavaScript are actions that occur as a result of user interactions or browser actions.
             Examples of events include clicking on an element, hovering over an element, pressing a key, and many more.
           </p>
+          {/* Common onclick events */}
           <p>
             Here are some common onclick events:
             <ul>
@@ -66,6 +52,7 @@ class Events extends Component {
               <li>onload - HTML page has finished loading</li>
             </ul>
           </p>
+          {/* Example code */}
           <p>
             Here's how you can handle events in JavaScript:
           </p>
@@ -85,13 +72,16 @@ class Events extends Component {
             });
             `}
           </pre>
+          {/* Description */}
           <p>
             JavaScript provides methods for attaching event listeners to HTML elements, handling events, and controlling event propagation.
           </p>
-          <h2 class="mb-3 mt-5">Click the radio button below to see what affect it has on the page.</h2>
+          {/* Toggle theme checkbox */}
+          <h2 className="mb-3 mt-5">Click the radio button below to see what affect it has on the page.</h2>
           <input type="checkbox" className="theme-checkbox mb-5 mt-3" onChange={this.toggleTheme} />
+          {/* Button for hover effect */}
           <h2>Hover over this button to see what the button does!</h2>
-          <button class="mt-5 mb-5">
+          <button className="mt-5 mb-5">
             <div>
               <span>
                 <p>Hover Me</p><p>:)</p>

@@ -1,233 +1,229 @@
+/* Set basic styles for the body */
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale; 
+  margin: 0; /* Remove default margin */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; /* Define font family for better cross-platform compatibility */
+  -webkit-font-smoothing: antialiased; /* Smooth fonts on WebKit browsers */
+  -moz-osx-font-smoothing: grayscale; /* Smooth fonts on macOS */
 }
 
+/* Set font family for code elements */
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
-
+/* Styles for light theme */
 .light-theme {
   background-color: #ffffff; /* Light grey background */
   color: #000000; /* Black text */
 }
 
+/* Styles for dark theme */
 .dark-theme {
   background-color: #333333; /* Dark grey background */
   color: #ffffff; /* White text */
 }
 
+/* Styles for theme checkboxes */
 .theme-checkbox {
-  margin-bottom: 10px;
+  margin-bottom: 10px; /* Add some space below checkboxes */
 }
 
-*.light-theme {
-  background-color: #ffffff; /* Light grey background */
-  color: #000000; /* Black text */
-}
-
-*.dark-theme {
-  background-color: #333333; /* Dark grey background */
-  color: #ffffff; /* White text */
-}
-
+/* Styles for buttons */
 button {
-  outline: 0;
-  border: 0;
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  max-width: 140px;
-  height: 50px;
-  border-radius: 0.5em;
-  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35);
-  overflow: hidden;
- }
- 
- button div {
-  transform: translateY(0px);
-  width: 100%;
- }
- 
- button,
- button div {
-  transition: 0.6s cubic-bezier(.16,1,.3,1);
- }
- 
-
-
- button div span {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 50px;
-  padding: 0.75em 1.125em;
- }
- 
- button div:nth-child(1) {
-  background-color: #1e90ff;
- }
- 
- button div:nth-child(2) {
-  background-color: #21dc62;
- }
- 
- button:hover {
-  box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35);
- }
- 
- button:hover div {
-  transform: translateY(-50px);
- }
- 
- button p {
-  font-size: 17px;
-  font-weight: bold;
-  color: #ffffff;
- }
- 
- button:active {
-  transform: scale(0.95);
- }
-
-
-
-.var-image{
- height:90px;
- position:relative;
-left:65px;
-}
-*{
-margin:0;
+  outline: 0; /* Remove default outline */
+  border: 0; /* Remove default border */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Arrange content vertically */
+  width: 100%; /* Set width to 100% */
+  max-width: 140px; /* Set maximum width */
+  height: 50px; /* Set height */
+  border-radius: 0.5em; /* Add border radius */
+  box-shadow: 0 0.625em 1em 0 rgba(30, 143, 255, 0.35); /* Add box shadow */
+  overflow: hidden; /* Hide overflow */
 }
 
+/* Styles for button divs */
+button div {
+  transform: translateY(0px); /* Initial transformation */
+  width: 100%; /* Set width to 100% */
+}
+
+/* Transition styles for buttons */
+button,
+button div {
+  transition: 0.6s cubic-bezier(.16, 1, .3, 1); /* Transition effect */
+}
+
+/* Styles for footer image */
+#footer-img {
+  height: 70px; /* Set height */
+  position: relative; /* Relative positioning */
+  right: 10px; /* Set position from right */
+}
+
+/* Styles for button div spans */
+button div span {
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Align items vertically */
+  justify-content: space-between; /* Space items evenly */
+  height: 50px; /* Set height */
+  padding: 0.75em 1.125em; /* Add padding */
+}
+
+/* Styles for button divs */
+button div:nth-child(1) {
+  background-color: #1e90ff; /* Set background color */
+}
+
+/* Styles for button divs */
+button div:nth-child(2) {
+  background-color: #21dc62; /* Set background color */
+}
+
+/* Hover styles for buttons */
+button:hover {
+  box-shadow: 0 0.625em 1em 0 rgba(33, 220, 98, 0.35); /* Add hover box shadow */
+}
+
+/* Hover styles for button divs */
+button:hover div {
+  transform: translateY(-50px); /* Move button div on hover */
+}
+
+/* Styles for button paragraphs */
+button p {
+  font-size: 17px; /* Set font size */
+  font-weight: bold; /* Set font weight */
+  color: #ffffff; /* Set text color */
+}
+
+/* Active styles for buttons */
+button:active {
+  transform: scale(0.95); /* Scale down on click */
+}
+
+/* Styles for variable image */
+.var-image {
+  height: 90px; /* Set height */
+  position: relative; /* Relative positioning */
+  left: 65px; /* Set position from left */
+}
+
+/* Reset margin for all elements */
+* {
+  margin: 0; /* Remove default margin */
+}
+
+/* Styles for card images */
 .card-image {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.5s ease-in-out;
-  z-index: 1; /* Ensure image is behind the text */
+  position: absolute; /* Absolute positioning */
+  top: 0; /* Align to top */
+  left: 0; /* Align to left */
+  width: 100%; /* Set width to 100% */
+  height: 100%; /* Set height to 100% */
+  transition: opacity 0.5s ease-in-out; /* Add transition */
+  z-index: 1; /* Set z-index */
 }
 
+/* Styles for card body */
 .card-body {
-  height: 100%;
-  background: #fefefe;
-  position: relative;
-  place-content: center;
-  border-radius: 5px;
-  overflow: hidden;
-  transition: all 0.5s ease-in-out;
+  height: 100%; /* Set height to 100% */
+  background: #fefefe; /* Set background color */
+  position: relative; /* Relative positioning */
+  place-content: center; /* Center content */
+  border-radius: 5px; /* Add border radius */
+  overflow: hidden; /* Hide overflow */
+  transition: all 0.5s ease-in-out; /* Add transition */
 }
 
+/* Styles for cards */
 .card {
-  position: relative;
-  font-size: 16px; /* Adjust font size for better readability */
-  background: #e1e1e1;
-  opacity: 0.8; /* Adjust opacity to your preference */
-  border-radius: 5px;
-  overflow: hidden;
-
-  transition: all 0.5s ease-in-out;
+  position: relative; /* Relative positioning */
+  font-size: 16px; /* Set font size */
+  background: #e1e1e1; /* Set background color */
+  opacity: 0.8; /* Set opacity */
+  border-radius: 5px; /* Add border radius */
+  overflow: hidden; /* Hide overflow */
+  transition: all 0.5s ease-in-out; /* Add transition */
 }
 
+/* Styles for card titles */
 .card-title {
-  position: relative;
-  padding: 20px 0; /* Add padding to improve spacing */
+  position: relative; /* Relative positioning */
+  padding: 20px 0; /* Add padding */
   text-align: center; /* Center align text */
   margin: 0; /* Remove default margin */
-  
 }
 
+/* Styles for card text */
 .card-text {
-  position: relative;
-  padding: 0 20px; /* Add padding to improve spacing */
-  opacity: 0; /* Initially hide the card text */
-  transition: opacity 0.5s ease-in-out;
-  color: #050504; /* Set text color to a more visible color */
+  position: relative; /* Relative positioning */
+  padding: 0 20px; /* Add padding */
+  opacity: 0; /* Set initial opacity */
+  transition: opacity 0.5s ease-in-out; /* Add transition */
+  color: #050504; /* Set text color */
 }
 
+/* Hover styles for card text */
 .card:hover .card-text {
-  opacity: 1; /* Show card text on hover */
+  opacity: 1; /* Show on hover */
 }
 
+/* Hover styles for card images */
 .card:hover .card-image {
-  opacity: 0; /* Hide image on hover */
+  opacity: 0; /* Hide on hover */
 }
 
+/* Hover styles for home card */
 #home-card:hover {
-  border-radius: 0;
-  transform: scale(1.1);
+  border-radius: 0; /* Change border radius on hover */
+  transform: scale(1.1); /* Scale on hover */
 }
 
+/* Styles for theme checkboxes */
 .theme-checkbox {
-  --toggle-size: 16px;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  width: 6.25em;
-  height: 3.125em;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
-  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
-  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
-  background-size: 205%;
-  background-position: 0;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
-  border-radius: 99em;
-  position: relative;
-  cursor: pointer;
-  font-size: var(--toggle-size);
+  --toggle-size: 16px; /* Set toggle size */
+  -webkit-appearance: none; /* Remove default appearance */
+  -moz-appearance: none; /* Remove default appearance */
+  appearance: none; /* Remove default appearance */
+  width: 6.25em; /* Set width */
+  height: 3.125em; /* Set height */
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat; /* Add background gradient */
+  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat; /* Add background gradient */
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat; /* Add background gradient */
+  background-size: 205%; /* Set background size */
+  background-position: 0; /* Set initial background position */
+  transition: 0.4s; /* Add transition */
+  border-radius: 99em; /* Add border radius */
+  position: relative; /* Relative positioning */
+  cursor: pointer; /* Set cursor */
+  font-size: var(--toggle-size); /* Set font size */
 }
 
+/* Styles for theme checkbox before pseudo-element */
 .theme-checkbox::before {
-  content: "";
-  width: 2.25em;
-  height: 2.25em;
-  position: absolute;
-  top: 0.438em;
-  left: 0.438em;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat;
-  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat;
-  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat;
-  background-size: 205%;
-  background-position: 100%;
-  border-radius: 50%;
-  -webkit-transition: 0.4s;
-  -o-transition: 0.4s;
-  transition: 0.4s;
+  content: ""; /* Add empty content */
+  width: 2.25em; /* Set width */
+  height: 2.25em; /* Set height */
+  position: absolute; /* Absolute positioning */
+  top: 0.438em; /* Set position from top */
+  left: 0.438em; /* Set position from left */
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #efefef), color-stop(50%, #2a2a2a)) no-repeat; /* Add background gradient */
+  background: -o-linear-gradient(left, #efefef 50%, #2a2a2a 50%) no-repeat; /* Add background gradient */
+  background: linear-gradient(to right, #efefef 50%, #2a2a2a 50%) no-repeat; /* Add background gradient */
+  background-size: 205%; /* Set background size */
+  background-position: 100%; /* Set initial background position */
+  border-radius: 50%; /* Add border radius */
+  transition: 0.4s; /* Add transition */
 }
 
+/* Styles for checked theme checkboxes */
 .theme-checkbox:checked::before {
-  left: calc(100% - 2.25em - 0.438em);
-  background-position: 0;
+  left: calc(100% - 2.25em - 0.438em); /* Move to checked position */
+  background-position: 0; /* Change background position */
 }
 
+/* Styles for checked theme checkboxes */
 .theme-checkbox:checked {
-  background-position: 100%;
+  background-position: 100%; /* Change background position */
 }
-
-
-/* 
-.hover-card:hover {
-  transform: scale(1.05);
-  transition: transform 0.2s ease;
-  cursor: pointer;
-}
-
-.card-body {
-  border-radius: 20px;
-  height: 100%; 
-  display: flex;
-  flex-direction: column;
-  transform: translate(-1029,734 -528.273);
-} */
-
